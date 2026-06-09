@@ -1,0 +1,575 @@
+/* Divibar shouldn't be in the overflow before JS is loaded */
+#sidebar-divibar {
+	visibility:hidden;
+	display:none;
+	position:static;
+	z-index: -15;
+	width: 100%;
+}
+
+.prevent_mainpage_scroll,
+.prevent_content_scroll {
+	overflow:hidden;
+}
+
+/* DiviBars style */
+.divibars {
+	width: 100%;
+	height: auto;
+    color: #5b5b5b;
+	left:0;
+    overflow:hidden;
+	background:none;
+	z-index: 16777271;
+	-webkit-backface-visibility: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.divibars:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.divibars.divibars-opened {
+	overflow:visible;
+}
+
+.divibars-close-container {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    width: 32px;
+    height: 32px;
+    clear: both;
+    cursor: pointer;
+	display:none;
+}
+
+.dibShow {
+	display:block !important;
+}
+
+.divibars > .et_pb_section > div {
+	width:100%;
+}
+
+.diviPositionRelative {
+	position: relative !important;
+}
+
+.divibar-nob .divibars-content-inner {
+	position: relative;
+	margin: auto;
+}
+
+.divibar-pagecontainer-z0 {
+	z-index:0;
+}
+
+.divibar-pagecontainer-z1 {
+	z-index:1;
+}
+
+.dbhidden,
+.et_pb_signup_divibarid {
+	visibility:hidden;
+	display:none;
+}
+
+.hiddenMainDiviBarsContainer {
+	visibility:hidden;
+	z-index:-9999;
+}
+
+.divibars-pushed {
+
+	margin:0 !important;
+	padding:0 !important;
+}
+
+/* Hide known bug with 3rd party plugins duplicating their content */
+body > .et-l {
+	display:none !important;
+	z-index:-1000;
+	position:fixed;
+	visibility:hidden !important;
+}
+
+/* Fixes and adjustments when Primary menu is transparent */
+/* Fix padding on Divibars Body */
+body.et_transparent_nav .divibars-body .et_pb_section {
+	padding:7px 0 !important;
+}
+
+/* Responsive Styles Large Desktop And Above */
+@media all and (min-width: 1405px) {
+	body.divibar-active.et_transparent_nav.et_fixed_nav #et-main-area #main-content > .container {
+		margin-top:0 !important;
+		padding-top:120px;
+	}
+	
+	body.divibar-active.et_transparent_nav.et_fixed_nav.et_pb_pagebuilder_layout.single.et_full_width_page:not(.et-tb-has-body) #et-main-area #main-content > .container {
+		padding-top:0;
+	}
+	
+	body.divibar-active.et_transparent_nav.et_secondary_nav_enabled.et_fixed_nav #et-main-area #main-content > .container {
+		margin-top:0 !important;
+		padding-top:150px;
+	}
+}
+
+/* Responsive Styles Standard Desktop Only */
+@media all and (min-width: 981px) and (max-width: 1405px) {
+	body.divibar-active.et_transparent_nav.et_fixed_nav #et-main-area #main-content > .container {
+		margin-top:0 !important;
+		padding-top:120px;
+	}
+	
+	body.divibar-active.et_transparent_nav.et_fixed_nav.et_pb_pagebuilder_layout.single.et_full_width_page:not(.et-tb-has-body) #et-main-area #main-content > .container {
+		padding-top:0;
+	}
+	
+	body.divibar-active.et_transparent_nav.et_secondary_nav_enabled.et_fixed_nav #et-main-area #main-content > .container {
+		margin-top:0 !important;
+		padding-top:150px;
+	}
+}
+
+/* Responsive Styles Tablet And Below */
+@media all and (max-width: 980px) {
+	body.divibar-active.et_transparent_nav.et_fixed_nav #et-main-area #main-content > .container {
+		margin-top:0 !important;
+		padding-top:80px;
+	}
+	
+	body.divibar-active.et_transparent_nav.et_fixed_nav.et_pb_pagebuilder_layout.single.et_full_width_page:not(.et-tb-has-body) #et-main-area #main-content > .container {
+		padding-top:0;
+	}
+	
+	body.divibar-active.et_transparent_nav.et_secondary_nav_enabled.et_fixed_nav #et-main-area #main-content > .container {
+		margin-top:0 !important;
+		padding-top:110px;
+	}
+}
+
+
+body.divibar-active-fast.et_extra.et_fixed_nav #page-container,
+body.divibar-active-fast.et_extra.et_fixed_nav.et_hide_nav #page-container,
+body.divibar-active-fast.et_extra.et_fixed_nav.et_transparent_nav #page-container {
+    -webkit-transition: padding-top .0s !important;
+    -moz-transition: padding-top .0s !important;
+    -o-transition: padding-top .0s !important;
+    transition: padding-top .0s !important;
+}
+
+body.divibar-active #page-container,
+body.divibar-active.et_hide_nav #page-container,
+body.divibar-active.et_transparent_nav #page-container {
+    -webkit-transition: padding-top .4s !important;
+    -moz-transition: padding-top .4s !important;
+    -o-transition: padding-top .4s !important;
+    transition: padding-top .4s !important;
+}
+
+.divibar-elem-transition-top {
+    -webkit-transition: top .4s !important;
+    -moz-transition: top .4s !important;
+    -o-transition: top .4s !important;
+    transition: top .4s !important;
+}
+
+body.divibar-active.et_header_style_slide #page-container {
+    -webkit-transition: padding-top .4s, left 0.8s cubic-bezier(0.77, 0, 0.175, 1), margin-top 0.4s ease-in-out !important;
+    -moz-transition: padding-top .4s, left 0.8s cubic-bezier(0.77, 0, 0.175, 1), margin-top 0.4s ease-in-out !important;
+    -o-transition: padding-top .4s, left 0.8s cubic-bezier(0.77, 0, 0.175, 1), margin-top 0.4s ease-in-out !important;
+    transition: padding-top .4s, left 0.8s cubic-bezier(0.77, 0, 0.175, 1), margin-top 0.4s ease-in-out !important;
+}
+
+@media (min-width: 981px) {
+	
+    body.divibar-active.et_fixed_nav.et_header_style_slide #main-header.divibar-elem-transition-top {
+        -webkit-transition: top .4s, left 0.8s cubic-bezier(0.77, 0, 0.175, 1), background 0.4s ease-in-out, opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1), transform 0.4s ease-in-out !important;
+        -webkit-transition: top .4s, left 0.8s cubic-bezier(0.77, 0, 0.175, 1), background 0.4s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 0.4s ease-in-out !important;
+        transition: top .4s, left 0.8s cubic-bezier(0.77, 0, 0.175, 1), background 0.4s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 0.4s ease-in-out !important;
+        transition: top .4s, left 0.8s cubic-bezier(0.77, 0, 0.175, 1), background 0.4s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1), transform 0.4s ease-in-out !important;
+        transition: top .4s, left 0.8s cubic-bezier(0.77, 0, 0.175, 1), background 0.4s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1), transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out !important;
+    }
+}
+
+/* DiviBars closing cross */
+.divibars-container .divibars-close {
+    width: auto;
+    height: auto;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    z-index: 99991;
+    font-size: 32px;
+    line-height:32px;
+    min-height: 15px;
+	min-width:15px;
+    color: #fff;
+    cursor:pointer;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: 300;
+}
+
+.divibars-container .divibars-close:after {
+	content: ' ';
+	display:block;
+	font-size:70px;
+	height:25px;
+	width:25px;
+	z-index:99;
+	position:relative;
+	visibility:hidden;
+}
+
+.promo-slide-in-close-promo {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    clear: both;
+    cursor: pointer;
+    -webkit-animation: promo-fade-in .8s ease;
+    animation: promo-fade-in .8s ease
+}
+.promo-slide-in-close-promo:after,
+.promo-slide-in-close-promo:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    right: 14px;
+}
+.promo-slide-in-close-promo:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+.promo-slide-in-close-promo:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.divibars-container .divibars-close span.custom_btn {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.divibars-container .divibars-close:hover {
+	opacity: .8;
+}
+
+.divibars-container .divibars-customclose-btn span {
+	position:relative;
+	top:-2px;
+}
+
+#sidebar-divibar.sidebar-divibar-bottom {
+	bottom:0;
+}
+
+.divibars a {
+	cursor: pointer;
+}
+
+body.page #page-container.divibars-temp-page-container,
+body.page.admin-bar #page-container.divibars-temp-page-container,
+body.et_fixed_nav.admin-bar #page-container.divibars-temp-page-container,
+body.divibar-open #page-container.divibars-temp-page-container,
+body .divibars-temp-page-container,
+body #page-container.divibars-temp-page-container {
+	
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.divibar-htmlNoMargin {
+	margin: 0 !important;
+}
+
+
+/* Extra theme support */
+.divibar-open.et_extra .divibars .et_pb_section {
+	background-color: #fff;
+}
+
+.divibar-open.et_extra .divibars .divibars-body > #divi-bars-center-all {
+	padding: 5px 0;
+}
+
+.divibar-open.et_extra .divibars .et_pb_extra_row, 
+.divibar-open.et_extra .divibars .et_pb_row {
+	width: 80%;
+	max-width: 1080px;
+	margin: 0 auto !important;
+	position: relative;
+	display: block;
+	min-width: auto;
+}
+
+.divibar-open.et_extra .divibars .et_pb_row,
+.divibar-open.et_extra .divibars .et_pb_column {
+    padding: 0 !important;
+}
+
+.divibar-open.et_extra.et_non_fixed_nav header.header {
+	position:static;
+}
+
+
+/* used for temporarily exposing elements in the jquery actualHeight plugin */
+/* since this is a temporary class we can override using important */
+.temp-show{position:absolute !important; visibility:hidden !important; display:block !important;}
+
+body .divibars-temp-page-container { 
+	position: static !important; 
+	padding-top: 0 !important; 
+	max-width: none !important;
+	width: auto !important;
+	overflow: hidden !important;
+}
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 1024px)  {
+	
+	.prevent_mainpage_scroll_mobile {
+		position: fixed;
+	}
+}
+
+
+@media (max-height: 480px) {
+	
+	.divibars-container .divibars-close {
+		
+	}
+}
+
+
+@media screen and (max-height: 30.5em) {
+	.divibars nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.divibars ul li {
+		min-height: 34px;
+	}
+}
+
+
+
+/* CSS for Centering: #divi-bars-center-all */
+
+
+#divi-bars-center-all.et_pb_section {
+    display: table !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+#divi-bars-center-all.et_pb_row {
+	display: table-cell !important;
+	position: relative !important;
+	text-align: center !important;
+}
+
+#divi-bars-center-all .et_pb_column {
+    text-align: center !important;
+    display: table-cell !important;
+    width: auto !important;
+    float: none !important;
+	max-width: none;
+	min-width: auto;
+}
+
+#divi-bars-center-all .et_pb_column_1_2,
+#divi-bars-center-all .et_pb_column_1_3 {
+    display: inline-block !important;
+    margin-right: 15px !important;
+    vertical-align: middle !important;
+    margin-bottom: 0 !important;
+}
+
+
+@media (max-width: 980px) {
+	
+	body.divibar-open .divibars-close-container {
+		right: 0px !important;
+	}
+	
+	body.divibar-open .divibars-container .divibars-close {
+		right: 20px !important;
+		min-width: 25px !important;
+	}
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+	
+	body.divibar-open .divibars-close-container {
+		right: 0px !important;
+	}
+}
+
+
+/* Attention Grabbers */
+
+.divi-bar-wiggle {
+    box-shadow: 0 0 1px transparent;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    animation-name: wiggle;
+    -o-animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    -moz-animation-name: wiggle;
+    -webkit-animation-name: wiggle;
+    animation-duration: 5s;
+    -o-animation-duration: 5s;
+    -ms-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+    animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-play-state: running;
+    -o-animation-play-state: running;
+    -ms-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+
+@keyframes wiggle {
+2% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+}
+4% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+}
+6% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+}
+8% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+}
+10% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+}
+
+12% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+}
+14% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+}
+16% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+}
+18% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+}
+20% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+}
+}
+
+
+
+
+.divi-bar-breathing {
+    -webkit-animation: divi-bar-breathing 7s ease-out infinite normal;
+    animation: divi-bar-breathing 7s ease-out infinite normal;
+    }
+
+
+@-webkit-keyframes divi-bar-breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes divi-bar-breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}

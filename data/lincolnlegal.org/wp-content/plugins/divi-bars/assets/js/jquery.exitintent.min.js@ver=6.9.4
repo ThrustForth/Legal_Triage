@@ -1,0 +1,3 @@
+// This plugin is released under the terms of the MIT license.
+// Copyright (c) 2016 Flávio Veloso
+!function(e){"use strict";var t;function n(n){n.clientY>0||(t&&clearTimeout(t),e.exitIntent.settings.sensitivity<=0?e.event.trigger("exitintent"):t=setTimeout(function(){t=null,void 0===n.target.length&&e.event.trigger("exitintent")},e.exitIntent.settings.sensitivity))}function i(){t&&(clearTimeout(t),t=null)}e.exitIntent=function(t,s){if(e.exitIntent.settings=e.extend(e.exitIntent.settings,s),"enable"==t)e(window).mouseleave(n),e(window).mouseenter(i);else{if("disable"!=t)throw"Invalid parameter to jQuery.exitIntent -- should be 'enable'/'disable'";i(),e(window).unbind("mouseleave",n),e(window).unbind("mouseenter",i)}},e.exitIntent.settings={sensitivity:300}}(jQuery);

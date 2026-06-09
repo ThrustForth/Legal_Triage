@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://lincolnlegal.org/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Lora:regular,500,600,700,italic,500italic,600italic,700italic|Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Lora';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoqF2mQ.ttf) format('truetype');}@font-face {font-family: 'Lora';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-PgFoqF2mQ.ttf) format('truetype');}@font-face {font-family: 'Lora';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-BQCoqF2mQ.ttf) format('truetype');}@font-face {font-family: 'Lora';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-C0CoqF2mQ.ttf) format('truetype');}@font-face {font-family: 'Lora';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787weuxJPkqg.ttf) format('truetype');}@font-face {font-family: 'Lora';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787wsuxJPkqg.ttf) format('truetype');}@font-face {font-family: 'Lora';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787zAvBJPkqg.ttf) format('truetype');}@font-face {font-family: 'Lora';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787z5vBJPkqg.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiAyp8kv8JHgFVrJJLmE0tMMPc.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmv1pVGdeL.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm21lVGdeL.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiGyp8kv8JHgFVrJJLufntF.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmg1hVGdeL.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmr19VGdeL.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmy15VGdeL.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm111VGdeL.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm81xVGdeL.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiGyp8kv8JHgFVrLPTufntF.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLFj_Z1JlEA.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8Z1JlEA.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJnedw.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9Z1JlEA.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z1JlEA.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1JlEA.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDD4Z1JlEA.ttf) format('truetype');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLBT5Z1JlEA.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPFcZTIAOhVxoMyOr9n_E7fdMbewI1Db5yZ.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPFcZTIAOhVxoMyOr9n_E7fdMbepI5Db5yZ.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPAcZTIAOhVxoMyOr9n_E7fdMbWAaxT.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPFcZTIAOhVxoMyOr9n_E7fdMbe0IhDb5yZ.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPFcZTIAOhVxoMyOr9n_E7fdMbetIlDb5yZ.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffAzHGIVzZg.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGIVzZg.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPecZTIAOhVxoMyOr9n_E7fdM3mCA.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGIVzZg.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffHjDGIVzZg.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffEDBGIVzZg.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Lora';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoqF2mg.woff) format('woff');}@font-face {font-family: 'Lora';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-PgFoqF2mg.woff) format('woff');}@font-face {font-family: 'Lora';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-BQCoqF2mg.woff) format('woff');}@font-face {font-family: 'Lora';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-C0CoqF2mg.woff) format('woff');}@font-face {font-family: 'Lora';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787weuxJPkqs.woff) format('woff');}@font-face {font-family: 'Lora';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787wsuxJPkqs.woff) format('woff');}@font-face {font-family: 'Lora';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787zAvBJPkqs.woff) format('woff');}@font-face {font-family: 'Lora';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787z5vBJPkqs.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiAyp8kv8JHgFVrJJLmE0tMMPQ.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmv1pVGdeI.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm21lVGdeI.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiGyp8kv8JHgFVrJJLufntG.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmg1hVGdeI.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmr19VGdeI.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmy15VGdeI.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm111VGdeI.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm81xVGdeI.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiGyp8kv8JHgFVrLPTufntG.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLFj_Z1JlEw.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8Z1JlEw.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJnedA.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9Z1JlEw.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z1JlEw.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1JlEw.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDD4Z1JlEw.woff) format('woff');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLBT5Z1JlEw.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPFcZTIAOhVxoMyOr9n_E7fdMbewI1Db5ya.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPFcZTIAOhVxoMyOr9n_E7fdMbepI5Db5ya.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPAcZTIAOhVxoMyOr9n_E7fdMbWAaxQ.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPFcZTIAOhVxoMyOr9n_E7fdMbe0IhDb5ya.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPFcZTIAOhVxoMyOr9n_E7fdMbetIlDb5ya.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffAzHGIVzZQ.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGIVzZQ.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPecZTIAOhVxoMyOr9n_E7fdM3mCw.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGIVzZQ.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffHjDGIVzZQ.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffEDBGIVzZQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Lora';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoqF2nA.woff2) format('woff2');}@font-face {font-family: 'Lora';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-PgFoqF2nA.woff2) format('woff2');}@font-face {font-family: 'Lora';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-BQCoqF2nA.woff2) format('woff2');}@font-face {font-family: 'Lora';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-C0CoqF2nA.woff2) format('woff2');}@font-face {font-family: 'Lora';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787weuxJPkq0.woff2) format('woff2');}@font-face {font-family: 'Lora';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787wsuxJPkq0.woff2) format('woff2');}@font-face {font-family: 'Lora';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787zAvBJPkq0.woff2) format('woff2');}@font-face {font-family: 'Lora';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787z5vBJPkq0.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiAyp8kv8JHgFVrJJLmE0tMMPI.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmv1pVGdeO.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm21lVGdeO.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiGyp8kv8JHgFVrJJLufntA.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmg1hVGdeO.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmr19VGdeO.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmy15VGdeO.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm111VGdeO.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm81xVGdeO.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiGyp8kv8JHgFVrLPTufntA.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLFj_Z1JlFQ.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8Z1JlFQ.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJnecg.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9Z1JlFQ.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z1JlFQ.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1JlFQ.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDD4Z1JlFQ.woff2) format('woff2');}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLBT5Z1JlFQ.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPFcZTIAOhVxoMyOr9n_E7fdMbewI1Db5yc.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPFcZTIAOhVxoMyOr9n_E7fdMbepI5Db5yc.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPAcZTIAOhVxoMyOr9n_E7fdMbWAaxW.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPFcZTIAOhVxoMyOr9n_E7fdMbe0IhDb5yc.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPFcZTIAOhVxoMyOr9n_E7fdMbetIlDb5yc.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffAzHGIVzYw.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGIVzYw.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPecZTIAOhVxoMyOr9n_E7fdM3mDQ.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGIVzYw.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffHjDGIVzYw.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v19/NaPDcZTIAOhVxoMyOr9n_E7ffEDBGIVzYw.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/d3f64f4c6a2b8dca71ee7150/script.js"></script><script type="text/javascript">
+			let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};</script>
+	<!-- This site is optimized with the Yoast SEO plugin v27.7 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Contact Us - Land of Lincoln</title>
+	<meta name="description" content="Contact Land of Lincoln Legal Aid for legal services, advice and referrals. Our administrative office can be reached at 618-398-0574." />
+	<link rel="canonical" href="https://lincolnlegal.org/contact-us/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Contact Us - Land of Lincoln" />
+	<meta property="og:description" content="Contact Land of Lincoln Legal Aid for legal services, advice and referrals. Our administrative office can be reached at 618-398-0574." />
+	<meta property="og:url" content="https://lincolnlegal.org/contact-us/" />
+	<meta property="og:site_name" content="Land of Lincoln" />
+	<meta property="article:modified_time" content="2026-04-22T14:32:01+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="1 minute" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/lincolnlegal.org\/contact-us\/","url":"https:\/\/lincolnlegal.org\/contact-us\/","name":"Contact Us - Land of Lincoln","isPartOf":{"@id":"https:\/\/lincolnlegal.org\/#website"},"datePublished":"2019-06-07T15:27:29+00:00","dateModified":"2026-04-22T14:32:01+00:00","description":"Contact Land of Lincoln Legal Aid for legal services, advice and referrals. Our administrative office can be reached at 618-398-0574.","breadcrumb":{"@id":"https:\/\/lincolnlegal.org\/contact-us\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/lincolnlegal.org\/contact-us\/"]}]},{"@type":"BreadcrumbList","@id":"https:\/\/lincolnlegal.org\/contact-us\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/lincolnlegal.org\/"},{"@type":"ListItem","position":2,"name":"Contact Us"}]},{"@type":"WebSite","@id":"https:\/\/lincolnlegal.org\/#website","url":"https:\/\/lincolnlegal.org\/","name":"Land of Lincoln","description":"Legal Aid","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/lincolnlegal.org\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel="alternate" type="application/rss+xml" title="Land of Lincoln &raquo; Feed" href="https://lincolnlegal.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Land of Lincoln &raquo; Comments Feed" href="https://lincolnlegal.org/comments/feed/" />
+<link rel="alternate" type="text/calendar" title="Land of Lincoln &raquo; iCal Feed" href="https://lincolnlegal.org/events/?ical=1" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://lincolnlegal.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flincolnlegal.org%2Fcontact-us%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://lincolnlegal.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flincolnlegal.org%2Fcontact-us%2F&#038;format=xml" />
+		<style>
+			.lazyload,
+			.lazyloading {
+				max-width: 100%;
+			}
+		</style>
+				<!-- This site uses the Google Analytics by MonsterInsights plugin v10.2.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-WLRCFER1VZ"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '10.2.2';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/lincolnlegal.org\/contact-us\/"};
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-WLRCFER1VZ',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-WLRCFER1VZ', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+							<!-- / Google Analytics by MonsterInsights -->
+		<meta content="Bare bones for Divi v.1.0" name="generator"/><link rel='stylesheet' id='frontendCSS-css' href='https://lincolnlegal.org/wp-content/plugins/safety-exit/assets/css/frontend.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-free-css' href='//use.fontawesome.com/releases/v5.3.1/css/all.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='popup-maker-site-css' href='//lincolnlegal.org/wp-content/uploads/pum/pum-site-styles.css?generated=1778005569&#038;ver=1.22.0' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-parent-css' href='https://lincolnlegal.org/wp-content/themes/Divi/style-static.min.css?ver=4.27.5' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-pum-css' href='https://lincolnlegal.org/wp-content/themes/Divi-Child/style.css?ver=4.27.5' type='text/css' media='all' />
+<link rel='stylesheet' id='DiviBars-main-css' href='https://lincolnlegal.org/wp-content/plugins/divi-bars/assets/css/main.css?ver=1.9.4' type='text/css' media='all' />
+<script type="text/javascript" src="https://lincolnlegal.org/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=10.2.2" id="monsterinsights-frontend-script-js" async="async" data-wp-strategy="async"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/lincolnlegal.org","hash_tracking":"false","v4_id":"G-WLRCFER1VZ"};/* ]]> */
+</script>
+<script type="text/javascript" src="https://lincolnlegal.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://lincolnlegal.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-js-after">
+/* <![CDATA[ */
+jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});
+//# sourceURL=jquery-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://lincolnlegal.org/wp-content/plugins/safety-exit/assets/js/frontend.js?ver=6.9.4" id="frontendJs-js"></script>
+<link rel="https://api.w.org/" href="https://lincolnlegal.org/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://lincolnlegal.org/wp-json/wp/v2/pages/47" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://lincolnlegal.org/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9.4" />
+<link rel='shortlink' href='https://lincolnlegal.org/?p=47' />
+<style>.nav li.et-hover > ul,
+.menu li.et-hover > ul {
+	visibility: visible !important;
+	opacity: 1 !important; }
+.da11y-submenu-show {
+	visibility: visible !important;
+}
+.keyboard-outline {
+		outline: #2ea3f2 solid 2px;
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+button:active.keyboard-outline,
+button:focus.keyboard-outline,
+input:active.keyboard-outline,
+input:focus.keyboard-outline,
+a[role="tab"].keyboard-outline {
+	outline-offset: -5px;
+}
+.et-search-form input:focus.keyboard-outline {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.et_pb_tab {
+	-webkit-animation: none !important;
+	animation: none !important;
+}
+.et_pb_contact_form_label,
+.widget_search .screen-reader-text,
+.et_pb_social_media_follow_network_name,
+.et_pb_search .screen-reader-text {
+	display: block !important; }
+.da11y-screen-reader-text,
+.et_pb_contact_form_label,
+.widget_search .screen-reader-text,
+.et_pb_social_media_follow_network_name,
+.et_pb_search .screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	text-shadow: none;
+	text-transform: none;
+	letter-spacing: normal;
+	line-height: normal;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+.da11y-screen-reader-text:focus {
+	background: #f1f1f1;
+	color: #00547A;
+	-webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+	clip: auto !important;
+	display: block;
+	height: auto;
+	left: 5px;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 7px;
+	width: auto;
+	z-index: 1000000; }
+</style><meta name="viewport" content="width=device-width, initial-scale=1.0" /><script>window.sftExtBtn={};window.sftExtBtn.classes="bottom left rectangle";window.sftExtBtn.icon="<i class=\"fas fa-times\"><\/i>";window.sftExtBtn.newTabUrl="https:\/\/weather.com\/";window.sftExtBtn.currentTabUrl="https:\/\/weather.com\/";window.sftExtBtn.btnType="rectangle";window.sftExtBtn.text="Safety Exit";window.sftExtBtn.shouldShow=true;</script><style>:root{--sftExt_bgColor:rgba(255,23,23,1);--sftExt_textColor:rgba(255, 255, 255, 1);--sftExt_active:inline-block;--sftExt_activeMobile:inline-block;--sftExt_mobileBreakPoint:600px;--sftExt_rectangle_fontSize:24px;--sftExt_rectangle_letterSpacing:inherit;--sftExt_rectangle_borderRadius:100px;}</style><meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://lincolnlegal.org"><link rel="alternate" href="https://lincolnlegal.org/wp-json/tribe/events/v1/" />		<script>
+			document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+		</script>
+				<style>
+			.no-js img.lazyload {
+				display: none;
+			}
+
+			figure.wp-block-image img.lazyloading {
+				min-width: 150px;
+			}
+
+			.lazyload,
+			.lazyloading {
+				--smush-placeholder-width: 100px;
+				--smush-placeholder-bg-max-width: 120px;
+				--smush-placeholder-aspect-ratio: 1/1;
+				width: var(--smush-image-width, var(--smush-placeholder-width)) !important;
+				aspect-ratio: var(--smush-image-aspect-ratio, var(--smush-placeholder-aspect-ratio)) !important;
+			}
+
+						.lazyload, .lazyloading {
+				opacity: 0;
+			}
+
+			.lazyloaded {
+				opacity: 1;
+				transition: opacity 400ms;
+				transition-delay: 0ms;
+			}
+
+					</style>
+				<script type="text/javascript">
+		var ajax_url = 'https://lincolnlegal.org/wp-admin/admin-ajax.php';
+		</script>
+		<link rel="icon" href="https://lincolnlegal.org/wp-content/uploads/2019/06/cropped-favicon-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://lincolnlegal.org/wp-content/uploads/2019/06/cropped-favicon-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://lincolnlegal.org/wp-content/uploads/2019/06/cropped-favicon-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://lincolnlegal.org/wp-content/uploads/2019/06/cropped-favicon-1-270x270.png" />
+<link rel="stylesheet" id="et-core-unified-47-cached-inline-styles" href="https://lincolnlegal.org/wp-content/et-cache/47/et-core-unified-47.min.css?ver=1777915151" /><link rel="stylesheet" id="et-core-unified-deferred-47-cached-inline-styles" href="https://lincolnlegal.org/wp-content/et-cache/47/et-core-unified-deferred-47.min.css?ver=1777915151" /><style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://lincolnlegal.org/wp-includes/css/dist/block-library/style.min.css?ver=6.9.4' type='text/css' media='none' onload="media='all'" />
+<style id='wp-block-library-inline-css' type='text/css'>
+/*wp_block_styles_on_demand_placeholder:6a267f5ca0368*/
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+
+</head>
+<body data-rsssl=1 class="wp-singular page-template-default page page-id-47 wp-theme-Divi wp-child-theme-Divi-Child tribe-no-js et_button_no_icon et_pb_button_helper_class et_fullwidth_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_secondary_nav_only_menu et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns3 et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db divibar-active">
+<script type="text/javascript">var divibars_settings = {'dib_custom_elems': '.top-bar',};</script><style id="et_divibars_customclosebtn_styles" type="text/css">
+								.divibar-customclose-btn-360 {
+									top:5px !important;
+									color:#000000 !important;
+									background-color: !important;
+									font-size:25px !important;
+									padding:px !important;
+									-moz-border-radius:% !important;
+									-webkit-border-radius:% !important;
+									-khtml-border-radius:% !important;
+									border-radius:% !important;
+								}
+								</style><script type="text/javascript">var divibars_with_automatic_trigger = {'360': '{"at_type":"divibar-timed","at_value":"0","at_onceperload":"1"}',};</script>					<script type="text/javascript">
+					var ajaxurl = "https://lincolnlegal.org/wp-admin/admin-ajax.php"
+					, diviAjaxUrl = 'https://lincolnlegal.org/wp-content/plugins/divi-bars/includes/ajax-handler-wp.php';
+					</script>
+					<div id="sidebar-divibar" class="hiddenMainDiviBarsContainer"><div id="divi-divibars-container-360" class="divibars-container"><div id="divibar-360" class="divibars " style="display:none;"	data-bgcolor="" data-fontcolor="" data-scrolltop="" 	data-placement="top" data-pushpage="1" data-screenfixed="0"	data-cookie="0" data-ismobile="0" data-istablet="0"><div class="divibars-content-inner"><div class="divibars-body"><div class="et-l">
+			<div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0-dib_360 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1-dib_360">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2-dib_360  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_3-dib_360  et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>We have <span style="color: #2a6ebb;">interpreters</span> available. Call us today at <span style="color: #2a6ebb;"><a href="tel:8773427891">877-342-7891</a>.</span></p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</div>
+	</div></div><div class="divibars-close-container"><button type="button" class="divibars-close divibar-customclose-btn-360"><span class="custom_btn">&times;</span></button></div></div></div></div>	<button id="sftExt-frontend-button" class="bottom left rectangle" data-new-tab="https://weather.com/" data-url="https://weather.com/">
+		<div class="sftExt-inner">
+			<i class="fas fa-times"></i><span>Safety Exit</span>
+		</div>
+	</button>	<div id="page-container">
+
+					<div id="top-header">
+			<div class="container clearfix">
+
+			
+				<div id="et-secondary-menu">
+				<ul id="et-secondary-nav" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a href="https://lincolnlegal.org/apply-for-legal-services/">Apply for Legal Services</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-340"><a target="_blank" href="https://lincolnlegal.kindful.com/">Donate Now</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-341"><a href="https://lincolnlegal.org/volunteer-opportunities/">Volunteer</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-87"><a href="tel:877427891">(877) 342-7891</a></li>
+</ul>				</div>
+
+			</div>
+		</div>
+		
+	
+			<header id="main-header" data-height-onload="87">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://lincolnlegal.org/">
+						<img src="https://lincolnlegal.org/wp-content/uploads/2025/10/Land-of-Lincoln-Legal-Aid-Logo-Full-Color-scaled.png" width="2560" height="742" alt="Land of Lincoln" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="87" data-fixed-height="67">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-227"><a href="https://lincolnlegal.org/who-we-are/">ABOUT US</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-228"><a href="https://lincolnlegal.org/who-we-are/">Who We Are</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://lincolnlegal.org/board-of-directors/">Board of Directors</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a href="https://lincolnlegal.org/annual-report/">Annual Report</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="https://lincolnlegal.org/financial-info/">Financial Info</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-80"><a href="https://lincolnlegal.org/what-we-do/">What we do</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="https://lincolnlegal.org/what-we-do/">Our Services</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134"><a href="https://lincolnlegal.org/housing-law/">Housing Law</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="https://lincolnlegal.org/family-law/">Family Law</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132"><a href="https://lincolnlegal.org/education-law/">Education Law</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131"><a href="https://lincolnlegal.org/consumer-law/">Consumer Law</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130"><a href="https://lincolnlegal.org/health-economic-security/">Health &#038; Economic Security</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="https://lincolnlegal.org/elder-law-disability-rights/">Elder Law &#038; Disability Rights</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127"><a href="https://lincolnlegal.org/faqs/">FAQs</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-78"><a href="https://lincolnlegal.org/legal-resources/">Legal Resources</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3276"><a href="https://lincolnlegal.org/mobile-justice-tour/">Mobile Justice</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"><a href="https://lincolnlegal.org/legal-resources/">Resources</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-76"><a href="https://lincolnlegal.org/get-involved/">Get Involved</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a href="https://lincolnlegal.org/volunteer-opportunities/">Volunteer Opportunities</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125"><a href="https://lincolnlegal.org/friends-of-land-of-lincoln/">Friends of Land of Lincoln</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-74"><a href="https://lincolnlegal.org/events-news/">Events &#038; News</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3274"><a href="https://lincolnlegal.org/events/">Upcoming Events</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331"><a href="https://lincolnlegal.org/recent-news/">Recent News</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-123"><a href="https://lincolnlegal.org/careers/">Careers</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-47 current_page_item menu-item-has-children menu-item-71"><a href="https://lincolnlegal.org/contact-us/" aria-current="page">Contact Us</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-120"><a href="https://lincolnlegal.org/locations/">Locations</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+
+
+			
+				<article id="post-47" class="post-47 page type-page status-publish hentry">
+
+				
+					<div class="entry-content">
+					<div class="et-l et-l--post">
+			<div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_1 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1>Contact Us</h1></div>
+			</div><div class="et_pb_module et_pb_divider et_pb_divider_0 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_2">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>To apply for legal services, please call:</p>
+<p><strong><span style="text-transform: uppercase;">Legal Advice and Referral Center</span></strong><br /><em>Hours:</em> Mon – Thurs: 9 am to 4 pm<br />Friday: 9 am to 1:30 pm<br /><em>Toll Free:</em> <a href="tel:8773427891">(877) 342-7891</a></p>
+<p><strong><span style="text-transform: uppercase;">Eviction &amp; Fresh Start Project Hotline</span></strong><br /><em>Hours:</em> Mon – Fri: 9 am to 4 pm<br /><em>Toll Free:</em> <a href="tel:8556019474">(855) 601-9474<br /></a></p>
+<p><strong><span style="text-transform: uppercase;">Consumer Law Hotline<br /></span></strong><span style="font-size: large; line-height: 1.2em;"><em style="font-size: 17px;"><em>Hours: </em></em>Mon – Thurs: 9 am to 4 pm<br />Friday: 9 am to 1:30 pm<em style="font-size: 17px;"><br />Phone:</em><span style="font-size: 17px;"> </span><a href="tel:6184037775" style="font-size: 17px;">(618) 403-7775</a></span><span style="font-size: small; line-height: 1.2em; display: block; margin-top: 0;">Serving Crawford, Edwards, Franklin, Gallatin, Hamilton, Hardin, Jefferson, Lawrence, Richland, Wabash, Wayne, and White Counties<br /></span></p>
+<p><span style="font-size: small;"></span></p>
+<p>Or apply online at: <a href="http://www.illinoislegalaid.org/" target="_blank" rel="noopener noreferrer">www.illinoislegalaid.org</a></p></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><strong>Administrative Office</strong><br /> 8787 State Street, Suite 201<br /> East St. Louis, IL 62203<br /> <a href="tel:6183980574">(618) 398-0574</a></p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</div>
+						</div>
+
+				
+				</article>
+
+			
+
+</div>
+
+
+			<footer id="main-footer">
+				
+<div class="container">
+	<div id="footer-widgets" class="clearfix">
+		<div class="footer-widget"><div id="text-2" class="fwidget et_pb_widget widget_text"><h4 class="title">Connect</h4>			<div class="textwidget"></div>
+		</div><div id="custom_html-2" class="widget_text fwidget et_pb_widget widget_custom_html"><div class="textwidget custom-html-widget"><strong><p style="font-family:poppins;color:#ffffff">
+LAND OF LINCOLN
+LEGAL AID, INC.</p></strong>
+<p style="font-size:17px">
+8787 State Street, Suite 201
+<br>East St. Louis, IL 62203 
+<br>Phone: <a href="tel:6183980574">618-398-0574</a></p>
+<br>
+<p>
+Legal Research Services (Bloomberg Law®) provided by the Bloomberg Industry Group</p></div></div></div><div class="footer-widget"><div id="text-4" class="fwidget et_pb_widget widget_text"><h4 class="title">Navigate</h4>			<div class="textwidget"></div>
+		</div><div id="custom_html-3" class="widget_text fwidget et_pb_widget widget_custom_html"><div class="textwidget custom-html-widget"><p style="font-size:17px">
+<a href="/who-we-are">ABOUT US</a>
+<br>
+	<a href="/what-we-do">WHAT WE DO</a>
+<br>
+	<a href="/legal-resources">LEGAL RESOURCES</a>
+<br>
+	<a href="/get-involved">GET INVOLVED</a>
+<br>
+	<a href="/events-news">EVENTS &AMP; NEWS</a>
+<br>
+	<a href="/wp-content/uploads/2019/09/Non-Discrimination-Poster-092919.pdf" target="_blank">NON-DISCRIMINATION POLICY</a>
+<br>
+	<a href="https://lincolnlegal.org/wp-content/uploads/2025/03/LOLLA-Grievance-Procedure.pdf" target="_blank">GRIEVANCE PROCEDURE</a>
+<br>
+		<a href="/privacy-policy" target="_blank">PRIVACY POLICY</a>
+<br>
+</p></div></div></div><div class="footer-widget"><div id="text-5" class="fwidget et_pb_widget widget_text"><h4 class="title">Get Started</h4>			<div class="textwidget"></div>
+		</div><div id="custom_html-4" class="widget_text fwidget et_pb_widget widget_custom_html"><div class="textwidget custom-html-widget"><p style="font-size:17px">
+	<a href="/apply-for-legal-services">APPLY FOR LEGAL SERVICES</a>
+<br>
+	<a href="https://lincolnlegal.kindful.com/" target="_blank">DONATE NOW</a>
+<br>
+	<a href="/volunteer-opportunities">VOLUNTEER</a>
+<br>
+	<br>
+	<a class="et_pb_button et_pb_more_button" style="color:#101B4E!important;" href="/contact-us">Contact Us</a>
+</p>
+<br>
+<a href="http://lsc.gov/" target="_blank"><img data-src="https://lincolnlegal.org/wp-content/uploads/2021/03/LSCBlackLogoHorizontalTransparent.png" width="200px" alt="lsc logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==" class="lazyload" style="--smush-placeholder-width: 400px; --smush-placeholder-aspect-ratio: 400/109;"></a>
+<br>
+<br>
+<a href=""><img data-src="https://lincolnlegal.org/wp-content/uploads/2021/03/UWSEM-logo-outline-2017.png" width="200px" alt="united way logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==" class="lazyload" style="--smush-placeholder-width: 400px; --smush-placeholder-aspect-ratio: 400/177;"></a></div></div></div>	</div>
+</div>
+
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<ul class="et-social-icons">
+
+	<li class="et-social-icon et-social-facebook">
+		<a href="https://www.facebook.com/lincolnlegalaid/" class="icon">
+			<span>Facebook</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-instagram">
+		<a href="https://www.instagram.com/lincolnlegalaid/" class="icon">
+			<span>Instagram</span>
+		</a>
+	</li>
+<li class="et-social-icon et-social-youtube">
+<a href="https://www.youtube.com/channel/UC_Ki-6lsKDvKDVbRFcsAyHA" class="icon" target="_blank">
+<span>YouTube</span>
+</a>
+</li>
+</ul><div id="footer-info">© Land of Lincoln Legal Aid, Inc., 2026. <br>All Rights Reserved. Website Design by Cork Tree Creative </div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/Divi-Child/*","/wp-content/themes/Divi/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+
+			if($('.menu-item-has-children').find('a') ) {
+				$('.menu-item-has-children').find('a').addClass('da11y-submenu');
+				$('.menu-item-has-children').find('a').not('.sub-menu a').attr('aria-expanded', 'false');
+			}
+
+			$('.da11y-submenu').on('focus', function() {
+				$(this).not('.sub-menu a').attr('aria-expanded', 'true');
+				$(this).siblings('.sub-menu').addClass('da11y-submenu-show');
+				$(this).trigger('mouseenter');
+			});
+
+			$('.menu-item-has-children a').on('focusout', function() {
+				if($(this).parent().not('.menu-item-has-children').is(':last-child')) {
+					$(this).parents('.menu-item-has-children').children('.da11y-submenu').attr('aria-expanded', 'false').trigger('mouseleave').siblings('.sub-menu').removeClass('da11y-submenu-show');
+				}
+			});
+
+			/**
+			 * Generate search form styles.
+			 *
+			 * @since Divi v3.0.23
+			 */
+			function et_set_search_form_css() {
+				const search_container = $('.et_search_form_container');
+				const body = $('body');
+				if (search_container.hasClass('et_pb_search_visible')) {
+					const header_height = $('#main-header').innerHeight();
+					const menu_width = $('#top-menu').width();
+					const font_size = $('#top-menu li a').css('font-size');
+					search_container.css({ height: header_height + 'px' });
+					search_container.find('input').css('font-size', font_size);
+					if (!body.hasClass('et_header_style_left')) {
+						search_container.css('max-width', menu_width + 60);
+					} else {
+						search_container.find('form').css('max-width', menu_width + 60);
+					}
+				}
+			}
+
+			/**
+			 * Show the search.
+			 *
+			 * @since Divi v3.0.23
+			 */
+			function show_search() {
+				const search_container = $('.et_search_form_container');
+				if (search_container.hasClass('et_pb_is_animating')) {
+					return;
+				}
+				$('.et_menu_container').removeClass('et_pb_menu_visible et_pb_no_animation').addClass('et_pb_menu_hidden');
+				search_container.removeClass('et_pb_search_form_hidden et_pb_no_animation').addClass('et_pb_search_visible et_pb_is_animating');
+				setTimeout(function () {
+					$('.et_menu_container').addClass('et_pb_no_animation');
+					search_container.addClass('et_pb_no_animation').removeClass('et_pb_is_animating');
+				}, 1000);
+				search_container.find('input').focus();
+				et_set_search_form_css();
+			}
+
+			/**
+			 * Hide the search.
+			 *
+			 * @since Divi v3.0.23
+			 */
+			function hide_search() {
+				if ($('.et_search_form_container').hasClass('et_pb_is_animating')) {
+					return;
+				}
+				$('.et_menu_container').removeClass('et_pb_menu_hidden et_pb_no_animation').addClass('et_pb_menu_visible');
+				$('.et_search_form_container').removeClass('et_pb_search_visible et_pb_no_animation').addClass('et_pb_search_form_hidden et_pb_is_animating');
+				setTimeout(function () {
+					$('.et_menu_container').addClass('et_pb_no_animation');
+					$('.et_search_form_container').addClass('et_pb_no_animation').removeClass('et_pb_is_animating');
+				}, 1000);
+			}
+
+			$(this).keyup(function () {
+				$('.et-search-field').focus(function () {
+					show_search();
+				}).blur(function () {
+					hide_search();
+				});
+			});
+
+		});
+	</script>
+
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+
+			/**
+			 * Add skiplink to page.
+			 */
+			function skipTo(target) {
+				const skiplink = '<a href="' + target + '" class="skip-link da11y-screen-reader-text">Skip to content</a>';
+				$(target).attr('tabindex', -1);
+				$('body').prepend(skiplink);
+			}
+			skipTo('#main-content');
+
+			/**
+			 * Use js to focus for internal links.
+			 */
+			$('a[href^="#"]').click(function () {
+				const content = $('#' + $(this).attr('href').slice(1));
+				content.focus();
+			});
+
+		});
+	</script>
+
+
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+
+			let lastKey = new Date();
+			let lastClick = new Date();
+
+			/**
+			 * Only apply focus styles for keyboard usage.
+			 */
+			$(this).on('focusin', function (e) {
+				$('.keyboard-outline').removeClass('keyboard-outline');
+				const wasByKeyboard = lastClick < lastKey;
+				if (wasByKeyboard) {
+					$(e.target).addClass('keyboard-outline');
+				}
+			});
+
+			$(this).on('mousedown', function () {
+				lastClick = new Date();
+			});
+
+			$(this).on('keydown', function () {
+				lastKey = new Date();
+			});
+
+		});
+	</script>
+
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+
+			/**
+			 * Allow Accordion & Toggle Divi modules to be focusable.
+			 *
+			 * @divi-module  Accordion, Toggle
+			 */
+			$('.et_pb_toggle').each(function () {
+				$(this).attr('tabindex', 0);
+			});
+
+			/**
+			 * Prevent spacebar from scolling page when toggle & accordion have focus.
+			 *
+			 * @divi-module  Accordion, Toggle
+			 */
+			$('.et_pb_toggle').on('keydown', function(e) {
+				// Spacebar.
+				if (e.which === 32){
+					e.preventDefault();
+				}
+			});
+
+			/**
+			 * Expand Accordion & Toggle modules when enter or spacebar are pressed while focused.
+			 *
+			 * @divi-module  Accordion, Toggle
+			 */
+			$(document).on('keyup', function(e) {
+				// Spacebar & Enter.
+				if (e.which === 13 || e.which === 32) {
+					$('.et_pb_toggle:focus .et_pb_toggle_title').trigger('click');
+				}
+			});
+
+		});
+	</script>
+
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+
+			/**
+			 * Add unique ID to search module input with matching label.
+			 *
+			 * @divi-module  Search
+			 */
+			$('.et-search-field').each(function (e) {
+				$(this).attr('id', 'et_pb_search_module_input_' + e);
+				$('#et_pb_search_module_input_' + e).before('<label class="da11y-screen-reader-text" for="et_pb_search_module_input_' + e + '">Search for...</label>');
+				$('#et_pb_search_module_input_' + e).after('<button type="submit" class="da11y-screen-reader-text">Search</button>');
+			});
+
+			/**
+			 * Add unique ID to contact module input with matching label.
+			 *
+			 * @divi-module  Contact
+			 */
+			$('.et_pb_contact_form').each(function (e) {
+				$(this).find('.et_pb_contact_captcha_question').parent().wrap('<label></label>');
+			});
+
+			/**
+			* Correct labels on social media icons
+			*/
+			$('.et-social-facebook a.icon span').text('Facebook');
+			$('.et-social-twitter a.icon span').text('Twitter');
+			$('.et-social-google-plus a.icon span').text('Google Plus');
+			$('.et-social-pinterest a.icon span').text('Pinterest');
+			$('.et-social-linkedin a.icon span').text('LinkedIn');
+			$('.et-social-tumblr a.icon span').text('Tumblr');
+            $('.et-social-instagram a.icon span').text('Instagram');
+			$('.et-social-skype a.icon span').text('Skype');
+			$('.et-social-flikr a.icon span').text('Flickr');
+			$('.et-social-myspace a.icon span').text('Myspace');
+			$('.et-social-dribbble a.icon span').text('Dribble');
+			$('.et-social-youtube a.icon span').text('YouTube');
+			$('.et-social-vimeo a.icon span').text('Vimeo');
+			$('.et-social-rss a.icon span').text('RSS');
+
+		});
+	</script>
+
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+
+			/**
+			 * Add role="tabList".
+			 *
+			 * @divi-module  Tab
+			 */
+			$('.et_pb_tabs_controls').each(function () {
+				$(this).attr('role', 'tabList');
+			});
+
+			/**
+			 * Add role="presentation".
+			 *
+			 * @divi-module  Tab
+			 */
+			$('.et_pb_tabs_controls li').each(function () {
+				$(this).attr('role', 'presentation');
+			});
+
+			/**
+			 * Add role="tab".
+			 *
+			 * @divi-module  Tab
+			 */
+			$('.et_pb_tabs_controls a').each(function () {
+				$(this).attr('role', 'tab');
+			});
+
+			/**
+			 * Add role="tabpanel".
+			 *
+			 * @divi-module  Tab
+			 */
+			$('.et_pb_tab').each(function () {
+				$(this).attr('role', 'tabpanel');
+			});
+
+			/**
+			 * Add initial state:
+			 *
+			 * aria-selected="false"
+			 * aria-expanded="false"
+			 * tabindex=-1
+			 *
+			 * @divi-module  Tab
+			 */
+			$('.et_pb_tabs_controls li:not(.et_pb_tab_active) a').each(function () {
+				$(this).attr({
+					'aria-selected': 'false',
+					'aria-expanded': 'false',
+					tabindex: -1
+				});
+			});
+
+			/**
+			* Add initial state:
+			*
+			* aria-selected="true"
+			* aria-expanded="true"
+			* tabindex=-1
+			*
+			* @divi-module  Tab
+			 */
+			$('.et_pb_tabs_controls li.et_pb_tab_active a').each(function () {
+				$(this).attr({
+					'aria-selected': 'true',
+					'aria-expanded': 'true',
+					tabindex: 0
+				});
+			});
+
+			/**
+			 * Add unique ID to tab controls.
+			 * Add aria-controls="x".
+			 *
+			 * @divi-module  Tab
+			 */
+			$('.et_pb_tabs_controls a').each(function (e) {
+				$(this).attr({
+					id: 'et_pb_tab_control_' + e,
+					'aria-controls': 'et_pb_tab_panel_' + e
+				});
+			});
+
+			/**
+			 * Add unique ID to tab panels.
+			 * Add aria-labelledby="x".
+			 *
+			 * @divi-module  Tab
+			 */
+			$('.et_pb_tab').each(function (e) {
+				$(this).attr({
+					id: 'et_pb_tab_panel_' + e,
+					'aria-labelledby': 'et_pb_tab_control_' + e
+				});
+			});
+
+			/**
+			 * Set initial inactive tab panels to aria-hidden="false".
+			 *
+			 * @divi-module  Tab
+			 */
+			$('.et_pb_tab.et_pb_active_content').each(function () {
+				$(this).attr('aria-hidden', 'false');
+			});
+
+			/**
+			 * Set initial inactive tab panels to aria-hidden="true".
+			 *
+			 * @divi-module  Tab
+			 */
+			$('.et_pb_tab:not(.et_pb_active_content)').each(function () {
+				$(this).attr('aria-hidden', 'true');
+			});
+
+			/**
+			 * Add unique ID to tab module.
+			 * Need to use data attribute because a regular ID somehow interferes with Divi.
+			 *
+			 * @divi-module  Tab
+			 */
+			$('.et_pb_tabs').each(function (e) {
+				$(this).attr('data-da11y-id', 'et_pb_tab_module_' + e);
+			});
+
+			/**
+			 * Update aria-selected attribute when tab is clicked or when hitting enter while focused.
+			 *
+			 * @divi-module  Tab
+			 */
+			$('.et_pb_tabs_controls a').on('click', function () {
+				const id = $(this).attr('id');
+				const namespace = $(this).closest('.et_pb_tabs').attr('data-da11y-id'); // Used as a selector to scope changes to current module.
+				// Reset all tab controls to be aria-selected="false" & aria-expanded="false".
+				$('[data-da11y-id="' + namespace + '"] .et_pb_tabs_controls a').attr({
+					'aria-selected': 'false',
+					'aria-expanded': 'false',
+					tabindex: -1
+				});
+				// Make active tab control aria-selected="true" & aria-expanded="true".
+				$(this).attr({
+					'aria-selected': 'true',
+					'aria-expanded': 'true',
+					tabindex: 0
+				});
+				// Reset all tabs to be aria-hidden="true".
+				$('#' + namespace + ' .et_pb_tab').attr('aria-hidden', 'true');
+				// Label active tab panel as aria-hidden="false".
+				$('[aria-labelledby="' + id + '"]').attr('aria-hidden', 'false');
+			});
+
+			// Arrow navigation for tab modules
+			$('.et_pb_tabs_controls a').keyup(function (e) {
+				const namespace = $(this).closest('.et_pb_tabs').attr('data-da11y-id');
+				const module = $('[data-da11y-id="' + namespace + '"]');
+				if (e.which === 39) { // Right.
+					const next = module.find('li.et_pb_tab_active').next();
+					if (next.length > 0) {
+						next.find('a').trigger('click');
+					} else {
+						module.find('li:first a').trigger('click');
+					}
+				} else if (e.which === 37) { // Left.
+					const next = module.find('li.et_pb_tab_active').prev();
+					if (next.length > 0) {
+						next.find('a').trigger('click');
+					} else {
+						module.find('li:last a').trigger('click');
+					}
+				}
+				$('.et_pb_tabs_controls a').removeClass('keyboard-outline');
+				module.find('li.et_pb_tab_active a').addClass('keyboard-outline');
+			});
+
+			/**
+			 * Add unique ID to search module.
+			 * Need to use data attribute because a regular ID somehow interferes with Divi.
+			 *
+			 * @divi-module  Search
+			 */
+			$('.et_pb_search').each(function (e) {
+				$(this).attr('data-da11y-id', 'et_pb_search_module_' + e);
+			});
+
+			/**
+			 * Add aria-required="true" to inputs.
+			 *
+			 * @divi-module  Contact Form
+			 */
+			$('[data-required_mark="required"]').each(function () {
+				$(this).attr('aria-required', 'true');
+			});
+
+			/**
+			 * Hide hidden error field on contact form.
+			 *
+			 * @divi-module  Contact Form
+			 */
+			$('.et_pb_contactform_validate_field').attr('type', 'hidden');
+
+			/**
+			 * Add alert role to error or success contact form message
+			 *
+			 * @divi-module  Contact Form
+			 */
+			$('.et-pb-contact-message').attr('role', 'alert');
+
+			/**
+			* Add main role to main-content
+			*/
+			$('#main-content').attr('role', 'main');
+
+			/**
+			 * Add aria-label="x".
+			 *
+			 * @divi-module  Fullwidth header, comment-wrap
+			 */
+			$('.et_pb_fullwidth_header').each(function (e) {
+				$(this).attr('aria-label', 'Wide Header' + e);
+			});
+			$('#comment-wrap').attr('aria-label', 'Comments');
+
+		});
+	</script>
+
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+
+			/**
+			 * Add aria-hidden="true" to all icons
+			 */
+			$('#et_top_search, .et_close_search_field, .et_pb_main_blurb_image').attr('aria-hidden', 'true');
+
+		});
+	</script>
+
+<div class="gtranslate_wrapper" id="gt-wrapper-51143662"></div>		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<div 
+	id="pum-3689" 
+	role="dialog" 
+	aria-modal="false"
+	aria-labelledby="pum_popup_title_3689"
+	class="pum pum-overlay pum-theme-3306 pum-theme-default-theme popmake-overlay auto_open click_open" 
+	data-popmake="{&quot;id&quot;:3689,&quot;slug&quot;:&quot;snap-benefits-update-5-1-2026&quot;,&quot;theme_id&quot;:3306,&quot;cookies&quot;:[{&quot;event&quot;:&quot;on_popup_close&quot;,&quot;settings&quot;:{&quot;name&quot;:&quot;pum-3689&quot;,&quot;time&quot;:&quot;1 week&quot;,&quot;path&quot;:true}}],&quot;triggers&quot;:[{&quot;type&quot;:&quot;auto_open&quot;,&quot;settings&quot;:{&quot;delay&quot;:500,&quot;cookie_name&quot;:[&quot;pum-3689&quot;]}},{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;medium&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;800px&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;100px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:&quot;1&quot;,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;0&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;x&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}">
+
+	<div id="popmake-3689" class="pum-container popmake theme-3306 pum-responsive pum-responsive-medium responsive size-medium">
+
+				
+							<div id="pum_popup_title_3689" class="pum-title popmake-title">
+				SNAP Benefits Update			</div>
+		
+		
+				<div class="pum-content popmake-content" tabindex="0">
+			<p style="text-align: center;">Changes to SNAP may affect your benefits. Some individuals may lose benefits<br />
+starting May 1, 2026 if they are not meeting or exempt from work requirements.</p>
+<p style="text-align: center;">Find our if you are affected and what steps you can take:<br />
+<strong><a title="Original URL: https://aberp.illinois.gov/screener/ABAWD?lang=EN. Click or tap if you trust this link." href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Faberp.illinois.gov%2Fscreener%2FABAWD%3Flang%3DEN&amp;data=05%7C02%7Clgreen%40lincolnlegal.org%7C4c8e9a2934004a89726f08de5478a814%7C874c1d3ceb254373b70db16fc7928e26%7C0%7C0%7C639041074361637267%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=e0k%2FY3rUb3LpNs%2F30Xvwyvi35o1RdCBnnPUgRnT2dLU%3D&amp;reserved=0" target="_blank" rel="noopener" data-auth="NotApplicable" data-linkindex="0" data-olk-copy-source="MessageBody">👉 Check Your SNAP Status</a></strong></p>
+		</div>
+
+				
+							<button type="button" class="pum-close popmake-close" aria-label="Close">
+			x			</button>
+		
+	</div>
+
+</div>
+<div 
+	id="pum-3677" 
+	role="dialog" 
+	aria-modal="false"
+	class="pum pum-overlay pum-theme-3681 pum-theme-custom-scam-theme popmake-overlay pum-overlay-disabled pum-click-to-close auto_open click_open" 
+	data-popmake="{&quot;id&quot;:3677,&quot;slug&quot;:&quot;scam-alert-bottom-corner&quot;,&quot;theme_id&quot;:3681,&quot;cookies&quot;:[{&quot;event&quot;:&quot;on_popup_close&quot;,&quot;settings&quot;:{&quot;name&quot;:&quot;pum-3677&quot;,&quot;key&quot;:&quot;&quot;,&quot;session&quot;:null,&quot;path&quot;:true,&quot;time&quot;:&quot;1 week&quot;}}],&quot;triggers&quot;:[{&quot;type&quot;:&quot;auto_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:[&quot;pum-3677&quot;],&quot;delay&quot;:&quot;1500&quot;}},{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:&quot;1&quot;,&quot;overlay_disabled&quot;:&quot;1&quot;,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;custom&quot;,&quot;responsive_min_width&quot;:&quot;0px&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100px&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;400px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:&quot;1&quot;,&quot;location&quot;:&quot;right bottom&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;10&quot;,&quot;position_right&quot;:&quot;10&quot;,&quot;position_fixed&quot;:&quot;1&quot;,&quot;animation_type&quot;:&quot;slide&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;bottom&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;x&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:&quot;1&quot;,&quot;esc_press&quot;:&quot;1&quot;,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}">
+
+	<div id="popmake-3677" class="pum-container popmake theme-3681 size-custom pum-position-fixed">
+
+				
+				
+		
+				<div class="pum-content popmake-content" tabindex="0">
+			<p><strong>Scam Alert</strong><br />
+We never charge for services.  <br data-start="1001" data-end="1004" />Call 877-342-7891 if asked for payment.</p>
+		</div>
+
+				
+							<button type="button" class="pum-close popmake-close" aria-label="Close">
+			x			</button>
+		
+	</div>
+
+</div>
+<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script type="text/javascript">
+var _userway_config = {
+/* uncomment the following line to override default position*/
+ position: '3', 
+/* uncomment the following line to override default size (values: small, large)*/
+/* size: 'large', */
+/* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
+/* language: 'en-US', */
+/* uncomment the following line to override color set via widget (e.g., #053f67)*/
+/* color: '#2a6ebb', */
+/* uncomment the following line to override type set via widget(1=person, 2=chair, 3=eye)*/
+/* type: '1', */
+/* uncomment the following line to override support on mobile devices*/
+/* mobile: true, */
+account: 'SzsfDXpxtI'
+};
+</script>
+<script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>
+<script type="text/javascript">
+function myFunction() {
+  alert("You are being redirected to another website who we partner with to do the online intake.");
+}
+</script><script type="text/javascript" src="https://lincolnlegal.org/wp-content/plugins/the-events-calendar/common/build/js/user-agent.js?ver=da75d0bdea6dde3898df" id="tec-user-agent-js"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https://lincolnlegal.org/wp-admin/admin-ajax.php","images_uri":"https://lincolnlegal.org/wp-content/themes/Divi/images","builder_images_uri":"https://lincolnlegal.org/wp-content/themes/Divi/includes/builder/images","et_frontend_nonce":"85009b137f","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"88b0e2eaee","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"47","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https://lincolnlegal.org/wp-content/themes/Divi/includes/builder/frontend-builder/assets/vendors","accent_color":"#2ea3f2","waypoints_options":{"context":[".pum-overlay"]}};
+var et_pb_box_shadow_elements = [];
+//# sourceURL=divi-custom-script-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://lincolnlegal.org/wp-content/themes/Divi/js/scripts.min.js?ver=4.27.5" id="divi-custom-script-js"></script>
+<script type="text/javascript" src="https://lincolnlegal.org/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://lincolnlegal.org/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script type="text/javascript" id="popup-maker-site-js-extra">
+/* <![CDATA[ */
+var pum_vars = {"version":"1.22.0","pm_dir_url":"https://lincolnlegal.org/wp-content/plugins/popup-maker/","ajaxurl":"https://lincolnlegal.org/wp-admin/admin-ajax.php","restapi":"https://lincolnlegal.org/wp-json/pum/v1","rest_nonce":null,"default_theme":"3306","debug_mode":"","disable_tracking":"","home_url":"/","message_position":"top","core_sub_forms_enabled":"1","popups":[],"cookie_domain":"","paramNames":{"popup_id":"pid","cta":"cta","notrack":"notrack"},"analytics_enabled":"1","analytics_route":"analytics","analytics_api":"https://lincolnlegal.org/wp-json/pum/v1"};
+var pum_sub_vars = {"ajaxurl":"https://lincolnlegal.org/wp-admin/admin-ajax.php","message_position":"top"};
+var pum_popups = {"pum-3689":{"triggers":[{"type":"auto_open","settings":{"delay":500,"cookie_name":["pum-3689"]}}],"cookies":[{"event":"on_popup_close","settings":{"name":"pum-3689","time":"1 week","path":true}}],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"3306","size":"medium","responsive_min_width":"0%","responsive_max_width":"800px","custom_width":"100px","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"top","open_sound":"none","custom_sound":"","location":"center","position_top":"0","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"default-theme","id":3689,"slug":"snap-benefits-update-5-1-2026"},"pum-3677":{"triggers":[{"type":"auto_open","settings":{"cookie_name":["pum-3677"],"delay":"1500"}}],"cookies":[{"event":"on_popup_close","settings":{"name":"pum-3677","key":"","session":null,"path":true,"time":"1 week"}}],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"3681","size":"custom","responsive_min_width":"0px","responsive_max_width":"100px","custom_width":"400px","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"slide","animation_speed":"350","animation_origin":"bottom","open_sound":"none","custom_sound":"","location":"right bottom","position_top":"100","position_bottom":"10","position_left":"0","position_right":"10","position_from_trigger":false,"position_fixed":true,"overlay_disabled":true,"stackable":true,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"custom-scam-theme","id":3677,"slug":"scam-alert-bottom-corner"}};
+//# sourceURL=popup-maker-site-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="//lincolnlegal.org/wp-content/uploads/pum/pum-site-scripts.js?defer&amp;generated=1778005569&amp;ver=1.22.0" id="popup-maker-site-js"></script>
+<script type="text/javascript" src="https://lincolnlegal.org/wp-content/themes/Divi/core/admin/js/common.js?ver=4.27.5" id="et-core-common-js"></script>
+<script type="text/javascript" id="smush-lazy-load-js-before">
+/* <![CDATA[ */
+var smushLazyLoadOptions = {"autoResizingEnabled":false,"autoResizeOptions":{"precision":5,"skipAutoWidth":true}};
+//# sourceURL=smush-lazy-load-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://lincolnlegal.org/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=4.1.0" id="smush-lazy-load-js"></script>
+<script type="text/javascript" id="smush-lazy-load-js-after">
+/* <![CDATA[ */
+function rw() { Waypoint.refreshAll(); } window.addEventListener( 'lazybeforeunveil', rw, false); window.addEventListener( 'lazyloaded', rw, false);
+//# sourceURL=smush-lazy-load-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://lincolnlegal.org/wp-content/plugins/divi-bars/assets/js/main.js?ver=1.9.4" id="DiviBars-main-js"></script>
+<script type="text/javascript" src="https://lincolnlegal.org/wp-content/plugins/divi-bars/assets/js/main.helper.js?ver=1.9.4" id="DiviBars-main-helper-js"></script>
+<script type="text/javascript" src="https://lincolnlegal.org/wp-content/plugins/divi-bars/assets/js/actual.min.js?ver=6.9.4" id="actual-js"></script>
+<script type="text/javascript" src="https://lincolnlegal.org/wp-content/plugins/divi-bars/assets/js/jquery.exitintent.min.js?ver=6.9.4" id="exit-intent-js"></script>
+<script type="text/javascript" id="gt_widget_script_51143662-js-before">
+/* <![CDATA[ */
+window.gtranslateSettings = /* document.write */ window.gtranslateSettings || {};window.gtranslateSettings['51143662'] = {"default_language":"en","languages":["af","sq","am","ar","hy","az","eu","be","bn","bs","bg","ca","ceb","ny","zh-CN","zh-TW","co","hr","cs","da","nl","en","eo","et","tl","fi","fr","fy","gl","ka","de","el","gu","ht","ha","haw","iw","hi","hmn","hu","is","ig","id","ga","it","ja","jw","kn","kk","km","ko","ku","ky","lo","la","lv","lt","lb","mk","mg","ms","ml","mt","mi","mr","mn","my","ne","no","ps","fa","pl","pt","pa","ro","ru","sm","gd","sr","st","sn","sd","si","sk","sl","so","es","su","sw","sv","tg","ta","te","th","tr","uk","ur","uz","vi","cy","xh","yi","yo","zu"],"url_structure":"none","native_language_names":1,"detect_browser_language":1,"flag_style":"2d","flag_size":24,"wrapper_selector":"#gt-wrapper-51143662","alt_flags":{"en":"canada","pt":"brazil","es":"colombia","fr":"quebec"},"switcher_open_direction":"top","switcher_horizontal_position":"right","switcher_vertical_position":"bottom","switcher_text_color":"#666","switcher_arrow_color":"#666","switcher_border_color":"#ccc","switcher_background_color":"#fff","switcher_background_shadow_color":"#efefef","switcher_background_hover_color":"#fff","dropdown_text_color":"#000","dropdown_hover_color":"#fff","dropdown_background_color":"#eee","flags_location":"\/wp-content\/plugins\/gtranslate\/flags\/"};
+//# sourceURL=gt_widget_script_51143662-js-before
+/* ]]> */
+</script><script src="https://lincolnlegal.org/wp-content/plugins/gtranslate/js/dwf.js?ver=3.1.1" data-no-optimize="1" data-no-minify="1" data-gt-orig-url="/contact-us/" data-gt-orig-domain="lincolnlegal.org" data-gt-widget-id="51143662" defer></script><script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+//# sourceURL=et-builder-modules-script-sticky-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://lincolnlegal.org/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.27.5" id="et-builder-modules-script-sticky-js"></script>
+</body>
+</html>
